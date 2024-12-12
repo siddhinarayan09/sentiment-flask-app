@@ -80,6 +80,55 @@ This project leverages **BERT (Bidirectional Encoder Representations from Transf
    cd sentiment-analysis-app
 2. **Set Up the Backend**:
   Create a virtual environment and install dependencies:
-  ```bash
-  pip install -r requirements.txt
+   ```bash
+    pip install -r requirements.txt
+
+3. **Start the Flask App**:
+   ```bash
+     python app1.py
+
+## Usage
+
+Launch the app in your browser.
+Upload a CSV file containing feedback data. Ensure the file has a column named FeedbackText.
+Wait for the analysis to complete.
+View the sentiment distribution charts and detailed results.
+
+## Output
+
+The application produces:
+
+**Pie Charts**: Visual representations of sentiment distributions (e.g., "Very Positive," "Negative").
+**Processed Feedback Data**: CSV output showing sentiment scores and labels for each entry.
+
+## Future Enhancements
+
+**MongoDB Integration**:
+Store feedback data and sentiment results for persistent access and historical analysis.
+**Dashboard**:
+Add features for filtering and viewing historical results by date or sentiment category.
+**Advanced Visualizations**:
+Use more sophisticated tools like Plotly or D3.js for interactive charts.
+**Multi-language Support**:
+Extend the app to support feedback in multiple languages.
+**Authentication**:
+Allow users to save their analysis securely with user accounts.
+
+## Acknowledgments
+
+**Hugging Face**: For providing the nlptown/bert-base-multilingual-uncased-sentiment model.
+**Flask**: For the lightweight and flexible backend framework.
+**React.js**: For building a responsive and dynamic frontend.
+**Matplotlib**: For generating charts.
+**SpaCy**: For NLP preprocessing.
+
+Inspiration from NLP projects and sentiment analysis examples.
+
+*Thank you :)*
+
+
+
+
+
+
 
