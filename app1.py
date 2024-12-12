@@ -2,13 +2,15 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pandas as pd
 import os
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 # Import the analysis function
 from sentiment_analysis import analyze_sentiments
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins = ["http://localhost:3000"])
 
 # Route to display the upload form
 @app.route('/')
@@ -50,9 +52,14 @@ def upload_file():
         analyzed_df = analyze_sentiments(file_path)
 
         # Generate pie charts
+        '''
         vader_chart_path = generate_pie_chart(analyzed_df, 'SentimentCategoryVader', 'VADER Sentiment Distribution')
         textblob_chart_path = generate_pie_chart(analyzed_df, 'SentimentCategoryTextblob', 'TextBlob Sentiment Distribution')
+        '''
+        #Generate pie chart for BERT analysis
+        bert_chart_path = generate_pie_chart(analyzed_df, 'SentimentBertLabel', 'BERT Sentiment Distribution')
 
+        
         # Remove the uploaded file
         os.remove(file_path)
 
@@ -65,11 +72,9 @@ def upload_file():
         </head>
         <body>
             <h1>Sentiment Analysis Result</h1>
-            <p>Below are the sentiment distributions:</p>
-            <h2>VADER Analysis</h2>
-            <img src="/static/{vader_chart_path}" alt="VADER Sentiment Chart">
-            <h2>TextBlob Analysis</h2>
-            <img src="/static/{textblob_chart_path}" alt="TextBlob Sentiment Chart">
+            <p>Below is the sentiment distribution using BERT analysis:</p>
+            <h2>BERT Sentiment Analysis</h2>
+            <img src="/static/{bert_chart_path}" alt="BERT Sentiment Chart">
         </body>
         </html>
         '''
