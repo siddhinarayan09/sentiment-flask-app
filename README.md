@@ -102,6 +102,8 @@ The application produces:
 **Processed Feedback Data**: CSV output showing sentiment scores and labels for each entry.
 
 
+![Screenshot 2024-12-12 223725](https://github.com/user-attachments/assets/b5737036-0697-45a5-be01-734d9a9126e8)
+
 
 ![Screenshot 2024-12-12 222709](https://github.com/user-attachments/assets/d27d0cee-65ce-4160-b954-3254c4a23ac2)
 
