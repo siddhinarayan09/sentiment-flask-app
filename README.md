@@ -101,6 +101,9 @@ The application produces:
 **Pie Charts**: Visual representations of sentiment distributions (e.g., "Very Positive," "Negative").
 **Processed Feedback Data**: CSV output showing sentiment scores and labels for each entry.
 
+![Screenshot 2024-12-12 222709](https://github.com/user-attachments/assets/d27d0cee-65ce-4160-b954-3254c4a23ac2)
+
+
 ## Future Enhancements
 
 **MongoDB Integration**:
