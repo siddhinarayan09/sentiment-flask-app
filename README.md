@@ -20,7 +20,7 @@ This project is a sentiment analysis application built using Flask for the backe
 
 ## Overview
 
-This project leverages **BERT (Bidirectional Encoder Representations from Transformers)** for sentiment analysis, analyzing customer feedback or textual data. Sentiments are classified into categories like "Very Positive," "Positive," "Neutral," "Negative," and "Very Negative." The results are visualized through pie charts.
+This project leverages **BERT (Bidirectional Encoder Representations from Transformers)** for sentiment analysis, analyzing customer feedback or textual data. Sentiments are classified into categories like "Very Positive," "Positive," "Neutral," "Negative," and "Very Negative." The results are visualized through  a pie chart.
 
 ---
 
